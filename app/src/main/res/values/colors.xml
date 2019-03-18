@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+       Old Theme
+       <color name="colorPrimary">#46B06F</color>
+        <color name="colorPrimaryDark">#317b4d</color>
+        <color name="colorAccent">#317b4d</color>
+        <color name="list_background">#46B06F</color>-->
+
+
+    <color name="login_bg">#acd2e9</color>
+    <color name="list_item_title">#FFFFFF</color>
+
+    <color name="list_background_pressed">#f44336</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="titletextcolor">#FFFFFF</color>
+    <color name="stacked_green">#46B06F</color>
+    <color name="colorPrimary">#317a4c</color>
+    <color name="colorPrimaryDark">#122f10</color>
+    <color name="colorAccent">#447718</color>
+    <color name="list_background">#46B06F</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <!--
+         New color Theme
+     <color name="colorPrimary">#193c12</color>
+     <color name="colorPrimaryDark">#122f10</color>
+     <color name="colorAccent">#447718</color>
+     <color name="list_background">#46B06F</color>
+     <color name="white">#ffffff</color>-->
+
+
+
+</resources>

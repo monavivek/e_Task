@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.taskmanager.saanjh.Assign_task">
+
+        <LinearLayout
+            android:id="@+id/rl_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/taskid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Task ID"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/task_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_10"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/task_subject_head"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Subject"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/task_sub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_11"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/c_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Activity Date"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/completed_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/calendar_icon"
+                android:editable="false"
+                android:layout_weight="2"
+                android:hint="MM/DD/YYYY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_16"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Description"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_13"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/statusss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="16sp"
+                android:layout_weight="1"/>
+
+            <RadioGroup
+                android:id="@+id/task_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/task_enterd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Started"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/task_inprogress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In_progress" />
+
+                <RadioButton
+                    android:id="@+id/task_complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Complete" />
+
+                <RadioButton
+                    android:id="@+id/task_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:layout_weight="1"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_18"
+            android:layout_below="@+id/rl_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/rl_18"
+            android:background="#ffffff"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/Picupload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Upload Image"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/upload_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:editable="false"
+                android:drawableRight="@mipmap/att_icon"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/rl_6"
+            android:background="#ffffff"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Percentage of Work"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/pow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_17"
+            android:background="@color/colorPrimary"
+            android:text="Save"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark" />
+
+    </RelativeLayout>
+
+</ScrollView>

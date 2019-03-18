@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">eTask</string>
+    <string name="title_activity_assign_task">Assign task</string>
+    <string name="title_activity_main">Main</string>
+    <string name="version">Version 1.1.1</string>
+    <string name="rights">© 2016&#8211;2021 E-Manage All rights reserved.</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="Gaurav">Gaurav</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="about_us">  about us</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="contact_us"> Contact us  </string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>New Task</item>
+        <item>All Tasks</item>
+        <item>Assigned Task</item>
+        <item>Notifications</item>
+        <item>About us</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string-array name="nav_drawer_items_admin">
+        <item>New Task</item>
+        <item>All Tasks</item>
+        <item>Assigned Task</item>
+        <item>Notifications</item>
+        <item>About us</item>
+        <item>Send Message</item>
+        <item>Logout</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+
+        <item>@mipmap/new_task_icon</item>
+        <item>@mipmap/alltask_icon</item>
+        <item>@mipmap/projects_icon</item>
+        <item>@mipmap/notification</item>
+        <item>@mipmap/about_us</item>
+        <item>@mipmap/logout_icon</item>
+        <!--    <item>@drawable/ic_user</item>-->
+    </array>
+
+    <array name="nav_drawer_icons_admin">
+
+        <item>@mipmap/new_task_icon</item>
+        <item>@mipmap/alltask_icon</item>
+        <item>@mipmap/projects_icon</item>
+        <item>@mipmap/notification</item>
+        <item>@mipmap/about_us</item>
+        <item>@mipmap/snd_notify</item>
+        <item>@mipmap/logout_icon</item>
+    </array>
+
+    <!-- Content Description -->
+
+    <string name="user_log_in"></string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_propview">Propview</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_search_property">SearchProperty</string>
+    <string name="title_activity_drawer_list_item">Drawer_list_item</string>
+    <string name="title_activity_sale_property">Sale Pproperty</string>
+    <string name="title_activity_rent_property">Rent Property</string>
+    <string name="title_activity_agent_property">Agent Property</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_webview_">Webview_Activity</string>
+    <string name="title_about_us">About us</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_task_detail">Task_detail</string>
+    <string name="title_activity_fragment_myassigned_task">Fragment_myassigned_task</string>
+    <string name="mobile">Please fill mobile number</string>
+    <string name="submit">Submit</string>
+    <string name="otp">Please fill OTP</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+</resources>
